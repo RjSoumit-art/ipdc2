@@ -1,0 +1,608 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-pink:#ED017F;
+    --primary-grey:#676767;
+    --theme-grey:#999999;
+    --text-dark:#343434;
+    --white:#fff;
+    --heading-black:#010101;
+    --para-text: #676767;
+    --section-bg:#FEF9FC;
+    --title-text-black:#363940;
+}
+@font-face {
+    font-family: "Metropolis";
+    src: url("fonts/metropolis/Metropolis-Bold.otf") format("opentype");
+}
+body{
+    font-family: "Metropoils";
+    font-weight: 500;
+    line-height: 1.55;
+    font-size: 16px;
+    color:var(--theme-grey);
+}
+.container{
+    max-width: 1398px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.col45{
+    max-width: 45%;
+    flex: 0 0 45%;
+    padding: 0 15px;
+}
+.col55{
+    max-width: 55%;
+    flex: 0 0 55%;
+    padding: 0 15px;
+}
+.col25{
+    max-width: 25%;
+    flex: 0 0 25%;
+    padding: 0 15px;
+}
+.cmn-gap{
+    padding: 99px 0;
+}
+.header{
+    padding:15px 0;
+}
+.brand a{
+    max-width: 175px;
+    display: block;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-links{
+    text-align: center;
+}
+.navlinks{
+    display: flex;
+    align-items: center;
+}
+.navlinks li{
+    padding: 0 18px;
+}
+.navlinks li a{
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #000;
+    transition: 0.5s ease all;
+}
+.navlinks li a:hover{
+    color:var(--primary-pink);
+}
+.headerbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cmn-btn{
+    display: inline-block;
+    background-color: var(--primary-pink);
+    color: var(--white);
+    padding: 16px 40px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: 0.5s ease;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+.cmn-btn span{
+    display: inline-block;
+    text-transform: lowercase;
+}
+.cmn-btn:hover{
+    background: var(--text-dark);
+    color:var(--primary-pink);
+}
+.search{
+    padding-right:30px;
+}
+.search i{
+  color:var(--primary-pink);
+  font-size: 20px;
+}
+.bannerbtn .cmn-btn{
+    width: 157px;
+    font-size: 12px;
+    padding: 13px 20px;
+    max-width: 157px;
+    line-height: 1.66;
+    /* margin-right: 20px; */
+
+}
+h1{
+    font-family: "Metropolis";
+    font-size: 57px;
+    max-width: 435px;
+    color: var(--heading-black);
+    margin-bottom: 33px;
+    font-weight: 900;
+    line-height: 1.19;
+}
+.bannercontent{
+    padding: 105px 0;
+}
+.bannercontent h1{
+    margin-bottom: 36px;
+    max-width: 435px;
+}
+.bannercontent p{
+    color: var(--para-text);
+    max-width: 391.74px;
+    margin-bottom: 38px;
+    font-weight: 500;
+}
+.main-img, .main-img img{
+    position: relative;
+}
+.carloan{
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    max-width: 197.57px;
+    padding: 20px 30px;
+    background: var(--white);
+    box-shadow: 4px 4px 58px 0 rgba(0,0,0,0.12);
+    border-radius: 55px;
+}
+.carloan span, .homeloan span{
+    text-wrap: nowrap;
+    padding-left: 15px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.homeloan{
+    position: absolute;
+    top: 20%;
+    right: 40px;
+    display: flex;
+    align-items: center;
+    max-width: 197.57px;
+    padding: 20px 30px;
+    background: var(--white);
+    box-shadow: 4px 4px 58px 0 rgba(0,0,0,0.12);
+    border-radius: 55px;
+}
+.bannercontent p{
+    max-width: 391px;
+    color: var(--primary-grey);
+    margin-bottom: 38px;
+}
+.bannerbtn{
+    display: flex;
+    justify-content: space-between;
+    max-width: 376px;
+    margin-bottom: 50px;
+}
+.snd-btn{
+    max-width: 195px;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: var(--white);
+    color: var(--primary-pink);
+    border: 1px solid var(--primary-pink) ;
+    padding: 13px 20px;
+    letter-spacing: 2px;
+    transition: 0.5s ease;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+.snd-btn:hover{
+    background: var(--text-dark);
+    color:var(--primary-pink);
+}
+.bannercontent .info{
+    width: 273px;
+    display: flex;
+    align-items: center;
+}
+.info {
+    display: flex;
+    align-items: center;
+    
+}
+.call a, .social-icons{
+    display: flex;
+    align-items: center;
+}
+.call a span{
+    display: inline-block;
+    padding-left: 13px;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.29;
+    color: var(--heading-black);
+}
+.social{
+    padding-left: 30px;
+}
+.social-icons{
+    margin: 0 -8px;
+    padding-left: 11px;
+    border-left: 1px solid #cccccc;
+}
+.social-icons li{
+    padding: 0 8px;
+    transition: 0.5s ease-in;
+    transform: scale(0.9);
+}
+.social-icons li:hover{
+    transform: scale(1.2);
+}
+.social-icons li a i{
+    font-size: 22px;
+}
+.social-icons li:nth-child(1) a i{
+    color: #4b7fcd;
+}
+.social-icons li:nth-child(2) a i{
+    color: #ff0000;
+}
+.social-icons li:nth-child(3) a i{
+    color: #4a71fb;
+}
+.social-icons li:nth-child(4) a i{
+    color: #ED017F;
+}
+h2{
+    font-family: "Metropolis";
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.07;
+    color: var(--heading-black);
+    text-transform: capitalize;
+}
+.h3-title{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.07;
+    color: var(--heading-black);
+    text-transform: capitalize;
+}
+h3{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.0;
+    margin-bottom: 15px;
+    color: var(--heading-black);
+    text-transform: capitalize;
+}
+h4{
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 1.66;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--title-text-black);
+}
+.footer-head-title{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.22;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    color: var(--title-text-black);
+}
+.customer-text-content h2{
+    margin-bottom: 20px;
+}
+.customer-text-content p{
+    font-size: 16px;
+    max-width: 622px;
+    margin: 0 auto;
+    text-align: center;
+}
+.customer-text-content{
+    text-align: center;
+    margin-bottom: 102px;
+}
+.customer-exp-card{
+    max-width: 259px;
+    margin: 0 26px;
+    padding: 24px
+}
+.customer-exp-card p{
+    max-width: 160px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.71;
+}
+.customer-exp .row{
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.customer-exp-card img{
+    margin-bottom: 21px;
+    font-size: 37px;
+}
+.services{
+    background-color: var(--section-bg);
+}
+.services .container{
+    padding: 99px 0;
+
+}
+.service-text-content{
+    text-align: center;
+    margin-bottom: 66px;
+}
+.service-text-content h2{
+    margin-bottom: 16px;
+}
+.service-text-content p{
+    width: 700px;
+    padding: 0 25px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 68px;
+}
+.service-card, .srevice-card-title{
+    max-width: 254px;
+}
+.srevice-card-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.srevice-card-title h4{
+    max-width: 195px;
+}
+.service-btn{
+    display: inline-block;
+    width: 37px;
+    height: 37px;
+    padding: 8px;
+    text-align: center;
+    background-color: #FCE0EF;
+    border-radius: 55px;
+    color: var(--primary-pink);
+    transition: 0.5s ease;
+}
+.service-btn:hover{
+    background: var(--text-dark);
+    color:var(--primary-pink);
+}
+.service-card img{
+    margin-bottom: 22px;
+}
+.service-loan-card .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.results-text-content h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.results-text-content p{
+    max-width: 520px;
+    text-align: center;
+    margin: 0 auto;  
+}
+.results-text-content{
+    margin-bottom: 91px;
+}
+.result-card{
+    max-width: 172px;
+    margin-bottom: 55px;
+}
+.results .row{
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.results .col25{
+    min-height: 101px;
+}
+.result-card h5{
+    margin-bottom: 15px;
+    transition: 0.5s ease;
+}
+.result-card p{
+    max-width: 172px;
+    line-height: 1.56;
+    text-transform: uppercase;
+}
+.results .row .col25:nth-child(1):hover{
+    color: var(--primary-pink);
+}
+.footer{
+    padding: 87px 0;
+}
+.footer-cards{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-text-content{
+    max-width: 180px;
+}
+.footer-text-content p{
+    font-size: 14px;
+    margin-bottom: 43px;
+    font-weight: 500;
+    line-height: 1.57;
+    color: var(--para-text);
+}
+.footer-cards .social{
+    padding-left: 0px;
+}
+.footer-cards .social-icons{
+    padding-left: 0px;
+    border: none;
+}
+.footer-cards-call .tel{
+    margin: 113px 0;
+}
+.footer-list li{
+    margin-bottom: 10px;
+}
+.footer-list li a{
+    color:  var(--para-text);
+    transition: 0.5s ease;
+    font-size: 14px;
+    font-weight: 400;
+}
+.footer-list li a:hover{
+    color: var(--primary-pink);
+    font-weight: 500px;
+}
+
+@media (max-width:1024px){
+    .brand a{
+        max-width: 150px;
+    }
+    .navlinks li a{
+        font-size: 10px;
+    }
+    .cmn-btn{
+        font-size: 14px;
+        padding: 12px 36px;
+    }
+    .bannercontent h1{
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+    .bannercontent p{
+        max-width: 360px;
+        margin-bottom: 32px;
+    }
+    .bannerbtn{
+        max-width: 320px;
+        margin-bottom: 40px;
+    }
+    .bannerbtn .cmn-btn, .snd-btn{
+        font-size: 10px;
+        padding: 10px 16px;
+    }
+    .bannerbtn .cmn-btn{
+        max-width: 132px;
+    }
+    .snd-btn{
+        max-width: 167px;
+    }
+    .carloan{
+        max-width: 168px;
+        padding: 15px 25px;
+    }
+    .carloan span{
+        padding-left: 10px;
+    }
+    .homeloan{
+        max-width: 175px;
+        padding: 15px 25px;
+    }
+    .homeloan span{
+        padding-left: 10px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    .customer-text-content{
+        margin-bottom: 90px;
+    }
+    .customer-text-content p{
+        max-width: 590px;
+    }
+    .customer-exp-card img{
+        margin-bottom: 16px;
+    }
+    .service-text-content p{
+        max-width: 680px;
+    }
+    .service-loan-card .col25{
+        width: 225px;
+    }
+    h4{
+        font-size: 18px;
+    }
+    .results-text-content{
+        margin-bottom: 70px;
+    }
+    .results-text-content p{
+        max-width: 480px;
+    }
+    .h3-title{
+        font-size: 35px;
+    }
+    .result-card p{
+        max-width: 165px;
+    }
+ 
+}
+@media (max-width:768px){
+    .brand a{
+        width: 120px;
+    } 
+    .navlinks li{
+        padding: 0 12px;
+    }
+    .navlinks li a{
+        letter-spacing: 0;
+    }
+    .search {
+        padding-right: 21px;
+    }
+    .search i{
+        font-size: 16px;
+    }
+    .cmn-btn{
+        padding: 12px 20px;
+        font-size: 12px;
+    }
+    .bannercontent{
+        padding: 80px 0;
+    }
+    .bannercontent h1{
+        font-size: 44px;
+        margin-bottom: 22px;
+    }
+    .bannercontent p{
+        margin-bottom: 25px;
+    }
+    .banner-image-content{
+        align-items: center;
+        top: 50px;
+    }
+    .carloan, .homeloan{
+        scale: 0.9;
+    }
+    .homeloan{
+        right: 12px;
+    }
+    .bannerbtn{
+        max-width: 305px;
+        margin-bottom: 30px;
+    }
+}
